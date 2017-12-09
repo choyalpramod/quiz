@@ -1,0 +1,5 @@
+<div class="bsContainer">
+  <login ng-if="!thisObj.userLoggedIn"></login>
+  <quiz ng-if="thisObj.userLoggedIn && !thisObj.finished"></quiz>
+  <quiz-finished ng-if="thisObj.finished"></quiz-finished>
+</div>

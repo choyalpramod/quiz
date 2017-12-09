@@ -1,0 +1,25 @@
+<div layout="column" class="padding-xxlarge no-top-padding">
+    <div flex class="text-align-center">
+      <h3>Result</h3>
+    </div>
+    <div flex class="text-align-center">
+      <canvas
+      class="chart chart-pie" chart-data="thisObj.chartData"
+      chart-labels="thisObj.labels">
+      </canvas>
+    </div>
+    <div flex layout="column" ng-repeat="(key, item) in thisObj.questions" class="bg-white default-radius light-border box-sizing-box margin-small no-horizontal-margin padding-xxlarge">
+        <div flex>
+          <h5>{{key + 1}}. {{item.question}}</h5>
+        </div>
+        <div flex class="padding-small no-horizontal-padding">
+          <div class="padding-xsmall no-horizontal-padding">Your Answer</div>
+          <div ng-if="item.selectedAnswer">{{item.options[item.selectedAnswer].option}}</div>
+          <div ng-if="!item.selectedAnswer">You did not choose an answer</div>
+        </div>
+        <div flex class="padding-small no-horizontal-padding">
+          <div class="padding-xsmall no-horizontal-padding">Correct Answer</div>
+          <div>{{item.options[item.rightAnswer].option}}</div>
+        </div>
+    </div>
+</div>

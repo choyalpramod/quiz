@@ -1,0 +1,48 @@
+@media screen and (min-width: 960px){
+
+}
+@media screen and (max-width: 959px){
+
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 600px){
+  .catalog-gallery-block{
+    height: 250px;
+  }
+  .bsContainer{
+    max-width: 95%;
+  }
+  .zh-card-bottom{
+    position: relative;
+  }
+  .zh-card-launching{
+    padding-bottom: 0px;
+  }
+  .full-width-below-600{
+    width: 100%;
+  }
+  .footer-border-bottom-below-600{
+    border-bottom: 1px solid $primary-color;
+  }
+  .para-small-xs{
+      font-size: $para-small;
+  }
+  .para-xsmall-xs{
+      font-size: $para-xsmall;
+  }
+}
+@media screen and (max-width: 479px){
+
+  .full-width-below-480{
+    width: 100%;
+  }
+  .horizontal-timeline .horizontal-timeline-element > div::after{
+    width: 45%;
+    left: 78%;
+  }
+}

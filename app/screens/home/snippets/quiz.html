@@ -1,0 +1,26 @@
+<form name="quizForm">
+    <div layout="column" class="padding-xxlarge no-top-padding">
+        <div flex class="padding-large" layout="row">
+            <div flex>Question {{thisObj.currentQuestion}}</div>
+            <div flex id="timer" class="text-align-right">
+              {{thisObj.timer}}
+            </div>
+        </div>
+        <div flex layout="column" class="bg-white default-radius light-border box-sizing-box margin-small no-horizontal-margin padding-xxlarge" ng-repeat="item in thisObj.questions" ng-if="item.number == thisObj.currentQuestion">
+            <div flex>
+                {{item.number}}. {{item.question}}
+            </div>
+            <div flex class="padding-xxlarge no-horizontal-padding">
+              <md-radio-group required name="options" ng-model="thisObj.questions[item.number - 1].selectedAnswer">
+                <md-radio-button ng-repeat="(key, options) in item.options" ng-value="key" class="md-primary">{{options.option}}</md-radio-button>
+              </md-radio-group>
+            </div>
+            <div flex class="text-align-right">
+                  <md-button name="options" id="nextButton" class="fg-white" ng-click="thisObj.saveUserAnswer(item, $event)" ng-disabled="quizForm.$invalid">
+                    <span ng-if="!thisObj.lastQuestion">Next</span>
+                    <span ng-if="thisObj.lastQuestion">Finish</span>
+                  </md-button>
+            </div>
+        </div>
+    </div>
+</form>

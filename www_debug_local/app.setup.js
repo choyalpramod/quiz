@@ -1,0 +1,1 @@
+/var/www/finomena-assignment/app/app.setup.js

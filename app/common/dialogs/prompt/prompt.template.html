@@ -1,0 +1,16 @@
+<md-dialog-content class="md-dialog-content">
+
+    <h2 class="md-title">{{ctrl.title}}</h2>
+
+    <div ng-if="ctrl.someContent" class="padding-small no-horizontal-padding">
+      <p>{{ctrl.someContent}}</p>
+    </div>
+
+    <div ng-if="ctrl.textContent" class="md-dialog-content-body">
+      <p>{{ctrl.textContent}}</p>
+    </div>
+
+    <md-dialog-actions>
+      <md-button class="md-cancel-button fg-white bg-blue" ng-click="abortDialog()"><span>Ok</span><div class="md-ripple-container"></div></md-button>
+    </md-dialog-actions>
+</md-dialog-content>

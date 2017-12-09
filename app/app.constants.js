@@ -1,0 +1,14 @@
+'use strict';
+
+window.CONSTANTS = {
+  // AJAX Calls Message status
+  ZH_RESPONSE_MESSAGE_STATUS_SUCCESS: 'success',
+  ZH_RESPONSE_MESSAGE_STATUS_ERROR: 'error',
+  ZH_RESPONSE_MESSAGE_STATUS_NOTIFICATION: 'Notification',
+
+  // View Mode - START
+  ZH_VIEW_MODE_DESKTOP: 0,
+  ZH_VIEW_MODE_MOBILE: 1,
+  ZH_VIEW_MODE_PHONETAB: 2,
+  // View Mode - END
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-controller="mainAppCtrl" ng-app="mainApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <base href="/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular Starter App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+    <!-- <pre class="help-div-left">{{$root.helpText | toJSONString}}</pre> -->
+
+    <zh-header></zh-header>
+    <div class="padding-large no-horizontal-padding no-top-padding" id="contentSection" name="contentSection" ui-view="contentSection"></div>
+    <zh-footer class=""></zh-footer>
+
+<!-- {{$root.globalNotifications}} -->
+    <!-- <div class="messages">
+      <div
+          ng-repeat="notification in $root.globalNotifications"
+          id="{{'notification' + $index}}"
+          class="message {{notification.status}}">
+
+          <div flex="95" ng-bind="notification.text"></div>
+          <i class="material-icons close icon-size-xsmall" ng-click="deleteNotification($index, this)">clear</i>
+          <!-- <md-icon md-font-icon="clear" ng-click="deleteNotification($index, this)" class="close material-icon icon-size-xsmall"></md-icon> -->
+      <!-- </div> -->
+    <!-- </div>  -->
+
+    <!-- <div>! Angular seed app: v<span app-version></span></div> -->
+
+    <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+    <!-- <script src="libs/angular/angular.js"></script> -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="libs/angular-xml2json/angular-xml2json.js"></script>
+
+    <script src="libs/chart.js/dist/Chart.js"></script>
+    <script src="libs/angular-chart.js/dist/angular-chart.js"></script>
+
+    <!-- <script src="libs/angular-deferred-bootstrap/angular-deferred-bootstrap.min.js"></script> -->
+    <script src="libs/moment/moment.min.js"></script>
+    <script src="libs/angular-moment/angular-moment.min.js"></script>
+
+    <script src="libs/angular-animate/angular-animate.min.js"></script>
+
+    <script src="libs/angular-aria/angular-aria.min.js"></script>
+    <script src="libs/angular-material/angular-material.min.js"></script>
+    <script src="libs/angular-messages/angular-messages.min.js"></script>
+
+    <script src="app.constants.js"></script>
+
+    <!-- <script src="app.objects.js"></script> -->
+    <!-- <script src="translate/fn.js"></script> -->
+    <!-- <script src="translate/en-us.js"></script> -->
+
+    <script src="app.setup.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.routes.js"></script>
+    <!-- <script src="app.deferred.bootup.js"></script> -->
+    <script src="app.init.js"></script>
+
+
+    <script src="helpers/ajax.service.js"></script>
+    <script src="helpers/common.helpers.js"></script>
+    <script src="helpers/numeric.filter.js"></script>
+
+    <!-- Layout -->
+    <script src="common/layout/layout.controller.js"></script>
+    <script src="common/layout/layout.directives.js"></script>
+    <script src="common/layout/layout.service.js"></script>
+
+    <!-- JS for modules [Put here] -->
+    <script src="screens/home/home.controller.js"></script>
+    <!-- <script src="screens/home/home.directives.js"></script> -->
+    <script src="screens/home/home.service.js"></script>
+
+    <script src="common/dialogs/prompt/prompt.controller.js"></script>
+    <!-- <script src="screens/home/home.directives.js"></script> -->
+    <script src="common/dialogs/prompt/prompt.service.js"></script>
+
+</body>
+
+</html>

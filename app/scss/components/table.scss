@@ -1,0 +1,35 @@
+.dataTable {
+  cursor: default;
+  width:100%;
+  // table-layout: fixed;
+  border:none;
+}
+
+.dataTable tr {
+  border-bottom:1px solid red;
+}
+
+.dataTable tr:hover {
+  background-color: #eee;
+}
+.dataTable tr:nth-child(odd) {
+  background-color:#efefef;
+}
+
+.dataTable th {
+  background-color: #888;
+  color: white;
+  padding: 8px 12px;
+  font-weight:normal;
+  text-align: left;
+}
+
+.dataTable td * {
+  display:inline-block;
+  width:100%;
+}
+.dataTable td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}

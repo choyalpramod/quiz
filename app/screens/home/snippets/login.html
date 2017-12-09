@@ -1,0 +1,22 @@
+<div class="bg-light-grey position-relative">
+    <div class="position-fixed full-width full-height bg-white login-user padding-xxlarge no-horizontal-padding">
+        <div class="padding-xlarge no-vertical-padding">
+            <form name="loginForm">
+                <div layout="column" layout-align="center center">
+                    <div flex>
+                        <md-input-container>
+                            <label>Full Name</label>
+                            <input type="text" required ng-model="thisObj.username" name="username" />
+                            <div ng-messages="loginForm.username.$error">
+                                <div ng-message="required">Full Name is required</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                    <div flex>
+                        <md-button class="default-radius fg-white" ng-click="thisObj.saveLogin()" ng-disabled="loginForm.$invalid">Login</md-button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
